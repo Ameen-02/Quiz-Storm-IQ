@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GK Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HOME SCREEN -->
+<div id="home" class="screen active">
+    <div class="top-bar">
+        <button id="levelsBtn" onclick="openCategories()">📊 Levels</button>
+
+        <div class="right">
+            <div id="coins">🪙 0</div>
+            <button id="musicToggle">🔊</button>
+        </div>
+    </div>
+
+    <div class="center">
+        <h1>GK QUIZ</h1>
+        <button class="main-btn" onclick="openCategories()">▶ PLAY</button>
+        <button onclick="openAchievements()">🏆 Achievements</button>
+        <button onclick="openSpin()">🎡 Spin Wheel</button>
+        <button onclick="claimDaily()">🎁 Daily Reward</button>
+        <button onclick="openShop()">🎨 Themes Shop</button>
+
+        <!-- 🔥 FIXED BUTTON -->
+        <button onclick="resetLevels()">🔄 Restart Game</button>
+    </div>
+</div>
+
+<!-- CATEGORY SCREEN -->
+<div id="categories" class="screen">
+    <button class="back" onclick="goHome()">⬅</button>
+    <h2>Select Category</h2>
+    <div class="cards">
+        <div onclick="openLevels('world')">World GK</div>
+        <div onclick="openLevels('science')">Science</div>
+        <div onclick="openLevels('computer')">Computer Science</div>
+        <div onclick="openLevels('pharmacy')">Pharmacy Quiz</div>
+        <div onclick="openLevels('mixed')">Mixed</div>
+    </div>
+</div>
+
+<!-- LEVELS -->
+<div id="levels" class="screen">
+    <button class="back" onclick="openCategories()">⬅</button>
+    <h2>Levels</h2>
+    <div id="levelsGrid"></div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="screen">
+    <button class="back" onclick="openLevels(currentCategory)">⬅</button>
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <p id="result"></p>
+    <div id="progressBar">
+    <div id="progress"></div>
+</div>
+<p id="xpText"></p>
+</div>
+
+<!-- SPIN -->
+<div id="spin" class="screen">
+    <button class="back" onclick="goHome()">⬅</button>
+    <h2>Spin & Win</h2>
+    
+    <div id="wheelContainer">
+        <div id="wheel"></div>
+    </div>
+
+    <button onclick="watchAd()">Watch Ad & Spin</button>
+    <button onclick="spinWheel()">SPIN</button>
+
+    <p id="spinResult"></p>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div id="achievements" class="screen">
+    <button class="back" onclick="goHome()">⬅</button>
+    <h2>Achievements</h2>
+    <ul id="achList"></ul>
+</div>
+
+<div id="shop" class="screen">
+    <button class="back" onclick="goHome()">⬅</button>
+    <h2>Theme Shop</h2>
+
+    <div class="cards">
+        <div onclick="buyTheme('neon')">⚡ Neon (80🪙)</div>
+        <div onclick="buyTheme('sunset')">🌇 Sunset (80🪙)</div>
+        <div onclick="buyTheme('galaxy')">🌌 Galaxy (100🪙)</div>
+        <div onclick="buyTheme('anime')">🎌 Anime (120🪙)</div>
+        <div onclick="buyTheme('dark')">🌙 Dark Theme (80🪙)</div>
+        <div onclick="buyTheme('blue')">💙 Blue Theme (80🪙)</div>
+        <div onclick="buyTheme('green')">💚 Green Theme (80🪙)</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
