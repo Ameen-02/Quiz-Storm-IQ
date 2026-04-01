@@ -10,7 +10,7 @@ let spinAllowed = false;
 // ================== SOUND SYSTEM ==================
 const sounds = {
     click: new Audio("click.mp3"),
-    correct: new Audio("/correct.mp3"),
+    correct: new Audio("correct.mp3"),
     wrong: new Audio("wrong.mp3"),
     spin: new Audio("spin.mp3")
 };
