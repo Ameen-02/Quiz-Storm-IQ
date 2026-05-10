@@ -111,10 +111,10 @@ function openLevels(cat){
             div.classList.add("locked");
 
             div.onclick = ()=>{
-                let buy = confirm("Unlock level for 20 coins?");
+                let buy = confirm("Unlock level for 500 coins?");
                 if(buy){
-                    if(coins >= 20){
-                        coins -= 20;
+                    if(coins >= 500){
+                        coins -= 500;
                         localStorage.setItem("coins", coins);
                         updateCoins();
 
