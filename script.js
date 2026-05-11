@@ -74,6 +74,7 @@ function buyTheme(theme){
     let price = {
         dark:50, blue:80, green:80,
         neon:200, sunset:150,
+        reddemon:200, purplenight:200,
         galaxy:150, anime:200
     };
 
