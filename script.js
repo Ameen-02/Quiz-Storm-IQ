@@ -72,9 +72,9 @@ applyTheme();
 
 function buyTheme(theme){
     let price = {
-        dark:50, blue:50, green:50,
-        neon:200, sunset:80,
-        galaxy:100, anime:200
+        dark:50, blue:80, green:80,
+        neon:200, sunset:150,
+        galaxy:150, anime:200
     };
 
     if(coins < price[theme]){
