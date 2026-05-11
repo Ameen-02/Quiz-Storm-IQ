@@ -147,6 +147,24 @@ body.sunset{
     color:#fff;
 }
 
+/* 🔥 RED DEMON */
+body.red-demon{
+    background:#0a0000;
+    color:#ff2e63;
+    text-shadow:0 0 5px #ff2e63,
+                0 0 15px #ff003c,
+                0 0 30px crimson;
+}
+
+/* 💜 PURPLE NIGHT */
+body.purple-night{
+    background:#05000a;
+    color:#b266ff;
+    text-shadow:0 0 5px #b266ff,
+                0 0 15px #9333ff,
+                0 0 30px #c084fc;
+}
+
 /* 🌌 GALAXY */
 body.galaxy{
     background: radial-gradient(circle at top, #1a2a6c, #000);
