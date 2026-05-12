@@ -1,8 +1,21 @@
-const CACHE_NAME = "age-calculator-v1";
+const CACHE_NAME = "quiz-storm-v1";
 
 const urlsToCache = [
   "/",
-  
+  "/index.html",
+  "/style.css",
+  "/script.js",
+  "/manifest.json",
+
+  // Images
+  "/storm1.png",
+  "/storm2.png",
+
+  // Sounds
+  "/click.mp3",
+  "/correct.mp3",
+  "/wrong.mp3",
+  "/spin.mp3" 
 ];
 
 // install
