@@ -1,4 +1,4 @@
-const CACHE_NAME = "quiz-storm-v1";
+const CACHE_NAME = "quiz-stormiq-v2";
 
 const urlsToCache = [
   "/",
