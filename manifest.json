@@ -1,23 +1,19 @@
 {
   "name": "Quiz Storm IQ",
   "short_name": "QuizStorm",
-  "id": "com.ameen.quizstormiq",
+  "id": "/Quiz-Storm-IQ/",
   "description": "Play exciting IQ quizzes, brain games, GK challenges, science, pharmacy, biology, Computer Science, and mixed subject quizzes.",
-  "start_url": "https://ameen-02.github.io/Quiz-Storm-IQ/",
+  
+  "start_url": "/Quiz-Storm-IQ/index.html",
+  "scope": "/Quiz-Storm-IQ/",
+  
   "display": "standalone",
-  "display_override": ["standalone", "fullscreen"],
   "background_color": "#0f0f0f",
   "theme_color": "#00ffff",
   "orientation": "portrait",
-  "scope": "/Quiz-Storm-IQ/",
+  
   "lang": "en",
-  "dir": "ltr",
-  "categories": [
-    "education",
-    "games",
-    "quiz",
-    "entertainment"
-  ],
+
   "icons": [
     {
       "src": "storm1.png",
