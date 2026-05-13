@@ -113,17 +113,25 @@
 </div>
 
  <script src="script.js"></script>
- <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./service-worker.js')
-    .then(function(registration) {
-      console.log('Service Worker registered');
-    })
-    .catch(function(error) {
-      console.log('Service Worker registration failed:', error);
-    });
+
+<script>
+if ("serviceWorker" in navigator) {
+
+  window.addEventListener("load", () => {
+
+    navigator.serviceWorker
+      .register("./service-worker.js")
+
+      .then((reg) => {
+        console.log("✅ Service Worker Registered");
+      })
+
+      .catch((err) => {
+        console.log("❌ Service Worker Failed", err);
+      });
+
   });
+
 }
 </script>
     
